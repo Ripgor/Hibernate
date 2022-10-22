@@ -92,7 +92,7 @@ public class UserServiceTest {
             userService.cleanUsersTable();
 
             if (userService.getAllUsers().size() != 0) {
-                Assert.fail("Метод очищения таблицы пользователей реализован не корректно");
+                Assert.fail("Метод очищения таблицы пользователей реализован некорректно");
             }
         } catch (Exception e) {
             Assert.fail("При тестировании очистки таблицы пользователей произошло исключение\n" + e);
